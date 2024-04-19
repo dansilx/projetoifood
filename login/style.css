@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+#content {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+#logo {
+    position: absolute;
+    top: 1.5em;
+    left: 1.5em;
+    width: 5vw;
+}
+
+#art1 {
+    position: absolute;
+    transform: translateY(-60%);
+    top: 50%;
+    left: 25vw;
+    width: 50%;
+    max-width: 31em;
+}
+
+#background {
+    background-color: #FDEDEE;
+    height: 200%;
+    width: 65vw;
+    border-top-right-radius: 200%;
+    border-bottom-right-radius: 200%;
+    z-index: 0;
+}
+
+#login {
+    width: 35em;
+    height: 30em;
+    min-width: 400px;
+    aspect-ratio: 1;
+    background-color: white;
+    border-radius: 2%;
+    box-shadow: 0px 0px 5px 3px rgba(255, 0, 0, 0.05);
+    position: absolute;
+    right: 15%;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#login h1 {
+    width: 80%;
+    text-align: center;
+    margin-top: 7%;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+}
+
+#login h3 {
+    color: grey;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+}
+
+#fblogin {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding-left: 0.5em;
+    height: 3em;
+    background-color: royalblue;
+    border-radius: 4px;
+    /* justify-content: ; */
+    column-gap: 4em;
+    text-decoration: none;
+}
+
+#fblogin:hover{
+    opacity: 0.8;
+}
+
+#fblogin p {
+    font-weight: 800;
+    color: white;
+    width: 80%;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+}
+
+#google-login {
+    height: 2.2em;
+    width: 100%;
+    border-width: thin;
+    border-radius: 2px;
+    border-color: silver;
+    border-style: solid;
+    margin-top: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    row-gap: 0;
+    position: relative;
+}
+
+#google-login:hover{
+    background-color: rgba(110, 171, 252, 0.966);
+    opacity: 0.4;
+    border-color: cornflowerblue;
+}
+
+#google-login img {
+    position: absolute;
+    left: 1em;
+}
+
+#google-login p {
+    position: absolute;
+    left: 40%;
+    transform: translateX(-50%);
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-size: small;
+    color: black;
+}
+
+.horizontal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 85%;
+    margin-top: 1.25em;
+}
+
+.horizontal div {
+    border-color: silver;
+    border-width: thin;
+    border-radius: 6px;
+    border-style: solid;
+    width: 45%;
+    height: 3.1em;
+    color: black;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+}
+
+.horizontal div:hover {
+    background-color: red;
+    color: white;
+    border: none;
+}
+
+@media screen and (max-width:800px) {
+    #content {
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    #logo {
+        position: absolute;
+        top: 25px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 15vw;
+        z-index: 1;
+    }
+
+    #background {
+        width: 100%;
+        height: 40vh;
+        position: absolute;
+        top: 0px;
+        border-top-right-radius: 0%;
+        border-bottom-right-radius: 0%;
+        border-bottom-left-radius: 45%;
+        border-bottom-right-radius: 45%;
+    }
+
+    #login {
+        width: 90%;
+        right: 0%;
+        box-shadow: none;
+        border-bottom: 200px;
+        position: unset;
+        padding-bottom: 10%;
+    }
+
+    #art1 {
+        position: absolute;
+        transform: translateX(-50%);
+        top: 20%;
+        left: 50%;
+        height: 60%;
+        aspect-ratio: 1;
+        max-height: 500px;
+        width: auto;
+        max-width: none;
+    }
+}
