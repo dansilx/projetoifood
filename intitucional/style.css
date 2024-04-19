@@ -1,0 +1,405 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+ * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+} 
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+header {
+    display: flex;
+    background-color: crimson;
+    color: white;
+    height: 100vh;
+    padding: 2em;
+}
+
+.barra {
+    display: flex;
+    height: 5em;
+    position: relative;
+}
+
+.menu-lista {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 11em;
+}
+
+.menu-lista li {
+    font-size: 1.25em;
+    padding: 1em;
+    list-style-type: none;
+    position: relative;
+    white-space: nowrap;
+}
+
+.menu-lista li p:hover {
+    border-bottom: 2px solid white;
+}
+
+.menu-lista li:last-child {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.menu-lista li:last-child p {
+    margin-left: 0.5em;
+}
+
+.barra button {
+    color: crimson;
+    font-size: 1em;
+    width: 12em;
+    height: 2.75em;
+    margin-left: 20em;
+    margin-top: 1em;
+    border-radius: 0.3em;
+    border: none;
+}
+
+.barra button:hover {
+    background-color: pink;
+}
+
+.resumo {
+    position: absolute;
+    margin-top: 6em;
+    margin-left: 6em;
+    display: flex;
+    flex-direction: row;
+}
+
+.resumo #teb {
+    width: 100%;
+}
+
+.resumo #teb p:first-child {
+    font-size: 3.5em;
+    font-weight: bold;
+    padding: 2em;
+}
+
+.resumo #teb p:nth-child(2) {
+    font-size: 1.5em;
+    padding: 0 5em 5em 5em;
+    /* padding-right: 2em; */
+}
+
+.resumo button {
+    color: crimson;
+    font-size: 1em;
+    width: 15em;
+    height: 3.5em;
+    border-radius: 0.3em;
+    border: 1px solid #fff;
+    margin: 0 7em 7em 7em;
+}
+
+.resumo button:hover {
+    background-color: rgb(252, 191, 212);
+}
+
+#hamburguer {
+    display: none;
+}
+
+#op1 {
+    display: none;
+    background-color: white;
+    color: black;
+    position: absolute;
+    font-size: 0.85em;
+    border-radius: 0.3em;
+    margin-top: 1em;
+    margin-left: 14em;
+    z-index: 1;
+}
+
+#op2 {
+    display: none;
+    background-color: white;
+    color: black;
+    position: absolute;
+    font-size: 0.85em;
+    border-radius: 0.3em;
+    margin-top: 1em;
+    margin-left: 25em;
+    z-index: 1;
+}
+
+#op3 {
+    display: none;
+    background-color: white;
+    color: black;
+    position: absolute;
+    font-size: 0.85em;
+    border-radius: 0.3em;
+    margin-top: 1em;
+    margin-left: 38em;
+    z-index: 1;
+}
+
+article {
+    margin-left: 5em;
+    margin-top: 4em;
+    margin-right: 5em;
+}
+
+.comunidade {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 7em;
+}
+
+.comunidade h1 {
+    color: crimson;
+    font-size: 2.25em;
+}
+
+.comunidade div {
+    padding-right: 10em;
+}
+
+.comunidade div p {
+    font-size: 1.25em;
+    padding-right: 1.5em;
+    line-height: 1.5;
+}
+
+.comunidade div button {
+    background-color: crimson;
+    color: white;
+    font-size: 1.15em;
+    padding: 0.75em;
+    margin-top: 1em;
+    border-radius: 0.3em;
+    border: none;
+}
+
+.comunidade div button:hover {
+    background-color: crimson;
+}
+
+.comunidade img {
+    margin-top: 2em;
+    border-radius: 1em;
+}
+
+footer section:first-child {
+    display: flex;
+    background-color: crimson;
+    color: #fff;
+    height: 36em;
+    margin-left: -0.5em;
+    margin-right: -0.5em;
+}
+
+footer section:first-child ul {
+    margin-top: 6em;
+}
+
+footer section:first-child li {
+    list-style: none;
+    line-height: 2em;
+    font-size: 1.25em;
+}
+
+footer section:first-child li.brok {
+    line-height: normal;
+    margin-top: 0.5em;
+}
+
+footer section:first-child ul li:first-child {
+    font-weight: bold;
+}
+
+footer section:first-child ul:first-child {
+    padding-right: 1em;
+    margin-left: 3em;
+    width: 16em;
+}
+
+footer section:first-child img {
+    margin-right: 0.25em;
+}
+
+footer section:first-child .organiza {
+    display: flex;
+    margin-left: -3em;
+    width: 5em;
+}
+
+footer section:first-child .organizar {
+    display: flex;
+    width: 5em;
+    margin-left: 20em;
+}
+
+footer section:first-child .organizar #redesapp {
+    margin-left: 15em;
+}
+
+footer section:first-child .organizar ul:first-child {
+    white-space: nowrap;
+}
+
+footer section:first-child .organizar #redesapp ul:last-child {
+    margin-left: 3em;
+}
+
+@media screen and (max-width: 768px) {
+    #news #noticias {
+        flex-direction: column;
+    }
+
+    #news #noticias .notic {
+        margin-top: 1.5em;
+    }
+
+    #news #noticias .notic:first-child {
+        margin-left: 3em;
+    }
+
+    #news #noticias .notic:not(:first-child) {
+        margin-left: 3em;
+    }
+
+    #news #titout {
+        font-size: 1.6em;
+        margin-left: -2em;
+        padding-right: 5em;
+    }
+
+    #news #parout {
+        margin-left: -12em;
+    }
+
+    #news button {
+        font-size: 1em;
+        width: 12em;
+        margin-right: 8.5em;
+    }
+
+    .invisivel {
+        display: none;
+    }
+
+    .invisivel img {
+        display: none;
+    }
+
+    .invisivel p {
+        display: none;
+    }
+
+
+    #hamburguer {
+        display: block;
+        margin-top: 2.25em;
+        margin-left: 7em;
+    }
+
+    header {
+        height: 62em;
+    }
+
+    .barra button {
+        font-size: 0.7em;
+        margin-left: -1em;
+        margin-top: 2.5em;
+    }
+
+    .menu-lista li:first-child img {
+        width: 2em;
+        height: 2em;
+        margin-top: 1em;
+        margin-left: -4em;
+    }
+
+    .resumo {
+        flex-direction: column-reverse;
+    }
+
+    .resumo img {
+        width: 25em;
+        margin-left: -2.25em;
+    }
+
+    .resumo #teb p:first-child {
+        font-size: 2em;
+        padding-right: 10em;
+        margin-left: -4em;
+        text-align: center;
+    }
+
+    .resumo #teb p:nth-child(2) {
+        font-size: 1.15em;
+        margin-left: -4em;
+        padding-right: 21em;
+        text-align: center;
+    }
+
+    .resumo button {
+        margin-left: 2em;
+    }
+
+    .barra .botao {
+        display: none;
+    }
+
+    .menu-visivel {
+        margin-left: -0.5em;
+        margin-top: -0.5em;
+        background-color: white;
+        width: 29em;
+        height: 28em;
+        z-index: 1;
+        color: black;
+    }
+
+    .menu-visivel .invisivel {
+        display: block;
+        padding: 1em;
+    }
+
+    .menu-visivel.menu-lista {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 2.3em;
+    }
+
+    .menu-visivel#hamburguer {
+        color: black;
+    }
+
+    footer section:last-child {
+        padding-bottom: 4em;
+    }
+
+    footer section:last-child div {
+        flex-direction: column;
+    }
+
+    footer section:last-child img {
+        width: 6em;
+        align-self: center;
+        position: relative;
+    }
+
+    footer section:last-child p {
+        text-align: center;
+        position: absolute;
+        margin-top: 5em;
+        padding-right: 1em;
+        font-size: 0.8em;
+    }
+}
