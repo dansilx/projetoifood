@@ -12,7 +12,7 @@ body {
 
 header {
     display: flex;
-    background-color: crimson;
+    background-color: red;
     color: white;
     height: 100vh;
     padding: 2em;
@@ -55,7 +55,7 @@ header {
 }
 
 .barra button {
-    color: crimson;
+    color: red;
     font-size: 1em;
     width: 12em;
     height: 2.75em;
@@ -94,7 +94,7 @@ header {
 }
 
 .resumo button {
-    color: crimson;
+    color: red;
     font-size: 1em;
     width: 15em;
     height: 3.5em;
@@ -104,7 +104,7 @@ header {
 }
 
 .resumo button:hover {
-    background-color: rgb(252, 191, 212);
+    background-color:pink;
 }
 
 #hamburguer {
@@ -160,7 +160,7 @@ article {
 }
 
 .comunidade h1 {
-    color: crimson;
+    color: red;
     font-size: 2.25em;
 }
 
@@ -175,7 +175,7 @@ article {
 }
 
 .comunidade div button {
-    background-color: crimson;
+    background-color: red;
     color: white;
     font-size: 1.15em;
     padding: 0.75em;
@@ -185,7 +185,7 @@ article {
 }
 
 .comunidade div button:hover {
-    background-color: crimson;
+    background-color: tomato;
 }
 
 .comunidade img {
@@ -195,7 +195,7 @@ article {
 
 footer section:first-child {
     display: flex;
-    background-color: crimson;
+    background-color: red;
     color: #fff;
     height: 36em;
     margin-left: -0.5em;

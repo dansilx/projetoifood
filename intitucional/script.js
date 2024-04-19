@@ -1,9 +1,9 @@
 function showOptions(optionId) {
-    var submenuToShow = document.getElementById(optionId);
+    let submenuToShow = document.getElementById(optionId);
     submenuToShow.style.display = 'block';
 
-    var option = document.getElementById(optionId).parentElement;
-    var optionRect = option.getBoundingClientRect();
+    let option = document.getElementById(optionId).parentElement;
+    let optionRect = option.getBoundingClientRect();
 
     submenuToShow.style.display = 'block';
     submenuToShow.style.top = optionRect.bottom + 'px';
@@ -11,20 +11,20 @@ function showOptions(optionId) {
 }
 
 function hideOptions(optionId) {
-    var submenuToHide = document.getElementById(optionId);
+    let submenuToHide = document.getElementById(optionId);
     submenuToHide.style.display = 'none';
 }
 
 document.getElementById('hamburguer').addEventListener('click', function() {
-    var menuLista = document.querySelector('.menu-lista');
+    let menuLista = document.querySelector('.menu-lista');
     menuLista.classList.toggle('menu-visivel');
 
-    var cabecalho = document.querySelector('.menu-header');
+    let cabecalho = document.querySelector('.menu-header');
     cabecalho.classList.toggle('expandido');
 
-    var hamb = document.querySelector('#hamburguer');
+    let hamb = document.querySelector('#hamburguer');
     hamb.classList.toggle('clicado')
 
-    var bott = document.querySelector('.bot');
+    let bott = document.querySelector('.bot');
     bott.classList.toggle('botao')
 });
